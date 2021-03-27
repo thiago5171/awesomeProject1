@@ -1,6 +1,7 @@
 package estruturasdedados
 
 import "fmt"
+
 //estrutura/classes
 
 type Contato struct {
@@ -30,7 +31,7 @@ func (this Contato) Equal(contat Contato) bool {
 }
 
 // metodo
-func NewContato(nome, telefone, email string)  Contato {
-	return Contato{nome, telefone, email}
+func NewContato(nome, telefone, email string) *Contato {
+	return &Contato{nome, telefone, email}
 
 }
