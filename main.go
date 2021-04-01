@@ -20,8 +20,13 @@ func main() {
 
 	//thiago.VerContato()
 
-	lista := estruturasdedados.NewListaDeContatos()
+	lista := estruturasdedados.NewAgenda("maria")
 	lista.SalvarContato(thiago)
 	lista.SalvarContato(gabriel)
 	lista.ExibirLista()
+
+
+	lista2 := estruturasdedados.NewAgenda("jose")
+	lista2.SalvarContato(thiago)
+	lista2.ExibirLista()
 }
