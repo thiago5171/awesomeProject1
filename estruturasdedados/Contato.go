@@ -11,8 +11,8 @@ type Contato struct {
 }
 
 // metodo
-func (c Contato) VerContato() {
-
+func (c Contato) VerContato() {// o c  vai pegar a o objeto  e introduzir na func e o nome ao lado é o seu tipo
+						//|->nome do metodo 
 	fmt.Println("Nome->", c.Nome)
 	fmt.Println("Telefone->", c.Telefone)
 	fmt.Println("Email->", c.Email)
@@ -21,7 +21,7 @@ func (c Contato) VerContato() {
 // metodo
 func (this Contato) Equal(contat Contato) bool {
 	if this.Email == contat.Email {
-		return true
+		return true// esse return caso seja tivado impede que o de bai
 	}
 
 	return false
