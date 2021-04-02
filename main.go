@@ -11,12 +11,14 @@ func main() {
 		Email:    "tgazaroli@gmail.com",
 	} // CTRL+SPAC ==> FILL ALL FIELDS
 
-	// essa é uma maqneira  diferente de declarar as caracteristicas do  objeto inteiro
+	// essa é uma maneira  diferente de declarar as caracteristicas do  objeto inteiro
 	//gabriel := estruturasdedados.Contato{" gabriel", "9999-8888", "gabriel@gmail.com"}
 
 	gabriel := estruturasdedados.NewContato(" gabriel", "9999-8888", "gabriel@gmail.com")
-
-	//	gabriel.VerContato()
+	pedro := estruturasdedados.NewContato("predro"," 8673423432","pedrinh000@gmail.com")
+	
+	pedro.VerContato()
+	gabriel.VerContato()
 
 	//thiago.VerContato()
 
@@ -25,8 +27,11 @@ func main() {
 	lista.SalvarContato(gabriel)
 	lista.ExibirLista()
 
-
+/*
 	lista2 := estruturasdedados.NewAgenda("jose")
 	lista2.SalvarContato(thiago)
 	lista2.ExibirLista()
+ */
+
+
 }
